@@ -10,8 +10,6 @@
 // Based on BodeNyquist Applet version 2.0
 // http://www.williamsonic.com
 
-package BodeZPackage;
-
 //==========================================================\\
 import javax.swing.*;
 import javax.swing.event.*;
