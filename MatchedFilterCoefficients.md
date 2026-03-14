@@ -4,7 +4,7 @@ Figure 5 in my paper shows two Bode plots of the gain and phase response of a si
 
 - Build and run the Java application
 - Obtain 100 samples representing a single cycle of a sine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line:
-python3 -c "import math; print(*(math.sin((x+0.5) / 50 * math.pi) for x in range (0, 100)), sep = '\n')"
+    python3 -c "import math; print(*(math.sin((x+0.5) / 50 * math.pi) for x in range (0, 100)), sep = '\n')"
 - Copy and paste all 100 samples into the "Numerator" field of the BodeZ app, replacing the previous contents.
 - Type the number "50" into the "Denominator" field, replacing the previous contents.
 - Set the "Start Freq." field to 0.001
@@ -14,7 +14,7 @@ python3 -c "import math; print(*(math.sin((x+0.5) / 50 * math.pi) for x in range
 You should now see the sine matched filter response, hitting unity gain (0 dB) at 0.01 cycles/sample, with deep notches at all harmonics, and a slope on the left falling at 6 dB/octave.
 
 - Now obtain 100 samples representing a single cycle of a cosine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line:
-python3 -c "import math; print(*(math.cos((x+0.5) / 50 * math.pi) for x in range (0, 100)), sep = '\n')"
+    python3 -c "import math; print(*(math.cos((x+0.5) / 50 * math.pi) for x in range (0, 100)), sep = '\n')"
 - Copy and paste all 100 samples into the "Numerator" field of the BodeZ app, replacing the previous contents.
 - Click the "Plot Response" button to redraw the image.
 
