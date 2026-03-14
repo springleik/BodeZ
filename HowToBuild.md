@@ -31,3 +31,5 @@ MarksiMac:BodeZ williamm$
 In looking over this output I noticed that the usage text mentions a jar file which doesn't actually exist. Just type "java BodeZ" and the app should run and open a new window like this:
 
 ![BodeZ Window at Startup](BodeZwindow.png)
+
+With no arguments on the command line the app defaults to a first-order low-pass filter with cut-off frequency at 1 kHz. Gain is 6 dB down and phase is -90 degrees at 1 kHz.
