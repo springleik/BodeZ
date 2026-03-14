@@ -3,7 +3,7 @@
 The BodeZ Java app in this repo was used to obtain Figure 5 in my paper "Digitizing Bridge Measures RC Time Constants," IEEE Transactions on Instrumentation and Measurement, vol. 75, doi: [10.1109/TIM.2026.3670597](https://ieeexplore.ieee.org/document/11421509#:~:text=10.1109/TIM.2026.3670597). The figure shows two Bode plots of the gain and phase response of sine and cosine inner product matched filters, cast as finite impulse response (FIR) filters in the Z domain. Follow these steps to recreate the same plots:
 
 - Build and run the Java app BodeZ. <[How to Build BodeZ](HowToBuild.md)>
-- Obtain 100 samples representing a single cycle of a sine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line in a terminal window.
+- Obtain 100 samples representing a single cycle of a sine wave, offset by one half sample so the waveform is symmetric about its center. This is easily done by running the following command line in a terminal window.
 ```
 python3 -c "import math; print(*(math.sin((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
 ```
@@ -17,7 +17,7 @@ python3 -c "import math; print(*(math.sin((x+0.5)/50 * math.pi) for x in range (
 
 You should now see the sine matched filter response, hitting unity gain (0 dB) at 0.01 cycles/sample, with deep notches at all harmonics, and a slope on the left falling off at 6 dB/octave.
 
-- Now obtain 100 samples representing a single cycle of a cosine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line in a terminal window:
+- Now obtain 100 samples representing a single cycle of a cosine wave, offset by one half sample so the waveform is symmetric about its center. This is easily done by running the following command line in a terminal window:
 ```
 python3 -c "import math; print(*(math.cos((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
 ```
