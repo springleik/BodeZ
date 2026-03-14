@@ -5,7 +5,7 @@ The BodeZ Java app in this repo was used to obtain Figure 5 in my paper "Digitiz
 - Build and run the Java app BodeZ. <[How to Build BodeZ](HowToBuild.md)>
 - Obtain 100 samples representing a single cycle of a sine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line in a terminal window.
 ```
-    python3 -c "import math; print(*(math.sin((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
+python3 -c "import math; print(*(math.sin((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
 ```
 - Copy and paste all 100 samples from the terminal window into the "Numerator" field of the BodeZ app, replacing previous contents. These samples become the weights in a multiply-and-accumulate (MAC) operation implementing a matched filter.
 - Enter the number 50 into the "Denominator" field, replacing previous contents. This normalizes gain to unity at the center frequency.
@@ -19,7 +19,7 @@ You should now see the sine matched filter response, hitting unity gain (0 dB) a
 
 - Now obtain 100 samples representing a single cycle of a cosine wave, offset by one half sample so that the average of the samples is zero. Which is easily done by running the following command line in a terminal window:
 ```
-    python3 -c "import math; print(*(math.cos((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
+python3 -c "import math; print(*(math.cos((x+0.5)/50 * math.pi) for x in range (0,100)), sep ='\n')"
 ```
 - Copy and paste all 100 samples from the terminal window into the "Numerator" field of the BodeZ app, replacing previous contents.
 - Click the "Plot Response" button to redraw the image, with other settings as before.
