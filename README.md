@@ -1,8 +1,10 @@
 # BodeZ
 Z-domain Bode plot applet, as described at <http://www.williamsonic.com/BodeNyquist/BodeZ.html>.
+
 Additional information is posted here:
-- [How to build and run the BodeZ Java app.](HowToBuild.md)
-- [How to plot gain and phase of a matched filter.](MatchedFilterCoefficients.md)
+
+* [How to build and run the BodeZ Java app.](HowToBuild.md)
+* [How to plot gain and phase of a matched filter.](MatchedFilterCoefficients.md)
 
 ![Screen Capture](BodeZ5.png "BodeZ")
 
